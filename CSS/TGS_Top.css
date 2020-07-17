@@ -130,6 +130,12 @@ body{
   color: #222222;
 }
 
+.powered_by{
+  font-family: 'Kosugi', sans-serif;
+  font-size: 10px;
+  color: #222222;
+
+}
 
 
    /*=== 画像の設定 ======================================= */
