@@ -1,0 +1,44 @@
+@charset "UTF-8";
+
+/* 読み込んだフォント設定
+font-family: 'Kosugi', sans-serif;
+font-family: 'Kosugi Maru', sans-serif;
+font-family: 'Noto Sans', sans-serif; 
+
+フォントスタイルをgoogleフォントにするときに入れる
+font-family: 選択フォント,sans-serif;
+*/
+/*htmlタグ編集*/
+
+.box {
+    position: relative;
+    top:0;
+    margin: 2em 0;
+    padding: 0.5em 1em;
+    border: solid 3px #AE3846;
+}
+.box .boxtitle {
+    position: absolute;
+    display: inline-block;
+    top: -27px;
+    left: -3px;
+    padding: 0 9px;
+    height: 25px;
+    line-height: 25px;
+    font-size: 17px;
+    background: #AE3846;
+    color: #ffffff;
+    font-weight: bold;
+    border-radius: 5px 5px 0 0;
+}
+.box p {
+    margin: 0; 
+    padding: 0;
+}
+
+.NewsContents
+{
+    font-family: 'Kosugi Maru', sans-serif;
+    font-size: 20px;
+    
+}
