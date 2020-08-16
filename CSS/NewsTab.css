@@ -38,7 +38,11 @@ font-family: 選択フォント,sans-serif;
 
 .NewsContents
 {
+    overflow-y: scroll;
+}
+
+.News
+{
     font-family: 'Kosugi Maru', sans-serif;
     font-size: 20px;
-    
 }
