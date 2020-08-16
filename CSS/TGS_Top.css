@@ -29,7 +29,6 @@ body{
   display: flex;
   flex-wrap: wrap;
   margin:0px 300px;
-  position: static;
 }
 .tab-wrap:after {
   content: '';
@@ -155,15 +154,21 @@ padding-right: 20px;
 /*twitterタブ編集*/
 .Twitter
 {
- position: fixed;
- right: 0;
+ margin: 10px auto;
+ position: relative;
+ top: -300px;
+ right: 10px;
+ left:700px
+ 
+ 
 }
 /*最新情報タブ編集*/
 .NewsTab
 {
- position: fixed;
- top:130px;
- left:0;
+ margin: auto 10px;
+ position: relative;
+ top: 100px;
+ left: 50px;
 }
 
 .footer
