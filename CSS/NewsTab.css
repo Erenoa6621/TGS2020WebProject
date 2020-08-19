@@ -15,34 +15,32 @@ font-family: 選択フォント,sans-serif;
     top:0;
     margin: 2em 0;
     padding: 0.5em 1em;
-    border: solid 3px #AE3846;
 }
-.box .boxtitle {
-    position: absolute;
-    display: inline-block;
-    top: -27px;
-    left: -3px;
-    padding: 0 9px;
-    height: 25px;
-    line-height: 25px;
-    font-size: 17px;
-    background: #AE3846;
-    color: #ffffff;
-    font-weight: bold;
-    border-radius: 5px 5px 0 0;
-}
-.box p {
-    margin: 0; 
-    padding: 0;
-}
-
-.NewsContents
+.NewsContent
 {
-    overflow-y: scroll;
+    line-height: 1.5;
+    overflow-y:scroll ;
 }
+.NewsContent::-webkit-scrollbar
+{
+  width: 10px;
+}
+.NewsContent::-webkit-scrollbar-track{
+  background: #fff;
+  border: none;
+  border-radius: 10px;
+  box-shadow: inset 0 0 2px #777;
+}
+.NewsContent::-webkit-scrollbar-thumb{
+  background: #ccc;
+  border-radius: 10px;
+  box-shadow: none;
+  }
+
 
 .News
 {
     font-family: 'Kosugi Maru', sans-serif;
     font-size: 20px;
+    border-bottom: 3px dotted rgb(212, 209, 0);
 }
