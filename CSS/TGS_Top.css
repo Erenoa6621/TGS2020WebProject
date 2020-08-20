@@ -12,6 +12,8 @@ font-family: 選択フォント,sans-serif;
 html
 {
 font-family: Arial, Helvetica, sans-serif;
+width: 1920px;
+height: 100%;
 }
 /*bodyタグ編集*/
 body{
