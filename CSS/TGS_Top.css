@@ -17,12 +17,46 @@ font-family: Arial, Helvetica, sans-serif;
 body{
   background-color: rgb(255, 255, 255);
 }
+.header
+{
+  background: #406abc;
+  width: 100%;
+  height: 120px;
+}
 /*logoタグ編集*/
 .logo
 {
   font-family: 'Noto Sans', sans-serif;
   font-weight: 900;
   text-align: center;
+  text-decoration:none;
+  color:#fff;
+}
+/*ProjectNameタグ編集*/
+.ProjectName
+{
+ background: #05468F 0% 0% no-repeat padding-box;
+ border-radius: 51px;
+ opacity: 1;
+ position: absolute;
+ top: 300px;
+ left: 570px;
+ width: 800px;
+ height: 200px;
+ opacity: 0.9;
+}
+
+.ProjectName h1
+{
+ text-align: center;
+ font-family:'Kosugi Maru', sans-serif ;
+ font-size: 30px;
+ line-height: 2.0;
+ color: #fff;
+ position: absolute;
+ top:20px;
+ left:100px
+ 
 }
 /*tab全体編集*/
 .tab-wrap {
@@ -59,7 +93,7 @@ body{
 /*tab中身編集*/
 .tab-content {
   width: 100%;
-  height: 10px;
+  height: 0px;
   overflow: hidden;
   opacity: 0;
 }
@@ -101,7 +135,56 @@ body{
   border-color: #fff #fff #ddd #ddd;
   box-shadow: -1px 1px 2px rgba(0, 0, 0, .1);
 }
-/*intro　タグ編集*/
+
+/*IntroBlock　タグ編集*/
+.IntroBlock
+{
+  background: #303030;
+  height: 500px;
+}
+/*InfomationIntro　タグ編集*/
+.InformationIntro
+{
+  text-align: center;
+  font-family: 'Kosugi', sans-serif;
+  font-size:45px;
+  width: 450px;
+  height: 73px;
+  color: #fff;
+  border-bottom: 5px solid #1A8D1A;
+  position: relative;
+  top: 20px;
+  left:400px
+}
+/*OCIntroタグ編集*/
+.OCIntro
+{
+  text-align: center;
+  font-family: 'Kosugi', sans-serif;
+  font-size:45px;
+  width: 450px;
+  height: 73px;
+  color: #fff;
+  border-bottom: 5px solid #F25DAD;
+  position: relative;
+  top: 20px;
+  left:400px
+}
+/*TwitterIntroタグ編集*/
+.TwitterIntro
+{
+  text-align: center;
+  font-family: 'Kosugi', sans-serif;
+  font-size:45px;
+  width: 450px;
+  height: 73px;
+  color: #fff;
+  border-bottom: 5px solid #1A8D1A;
+  position: relative;
+  top: 20px;
+  left:400px
+}
+/*introタグ編集*/
 .intro
 {
   font-family: 'Kosugi', sans-serif;
@@ -170,11 +253,269 @@ padding-right: 20px;
  top: 100px;
  left: 50px;
 }
+/*最新情報タブ編集*/
+.NewsBox
+{
+  background: #fff;
+  width: 1000px;
+  height: 300px;
+  border-radius: 45px;
+  overflow:hidden;
+  position: absolute;
+  left: 450px;
+}
 
-.footer
+.NewsBox iframe
+{
+  position: relative;
+  top:10px;
+}
+/*オープンキャンパスタブの設定*/
+.OCBlock
+{
+  background: #406ABC;
+  width: 100%;
+  height: 800px;
+
+}
+/*Youtube欄の設定*/
+.YoutubeBox{
+  background: #fff;
+  width: 500px;
+  height: 300px;
+  border-radius: 45px;
+  position: absolute;
+  left:400px
+}
+.YoutubeBox h2
 {
   text-align: center;
+  font-family: 'Kosugi', sans-serif;
+  width: 400px;
+  height: 60px;
+  font-size: 40px;
+  color: #303030;
+  border-bottom: 5px solid #FF1313;
+  position: absolute;
+  top:10px;
+  left:45px
 }
+.YoutubeBox p
+{
+  font-family: 'Kosugi', sans-serif;
+  text-align: left;
+  width: 470px;
+  height: 50px;
+  font-size:20px;
+  padding-right: 5px;
+  padding-left: 5px;
+  color: #303030;
+  position: relative;
+  top:110px;
+  left: 15px;
+}
+
+
+.YoutubeIcon
+{
+  background:#FF1313 ;
+  width: 200px;
+  height: 40px;
+  border-radius: 10px;
+  position: relative;
+  top:135px;
+  left: 150px;
+  transition:0.7s;
+}
+.YoutubeIcon:hover
+{
+  background: #05468F;
+}
+.YoutubeIcon a
+{
+  font-family: 'Kosugi', sans-serif;
+  text-align: center;
+  text-decoration:none;
+  width: 200px;
+  height: 50px;
+  font-size: 30px;
+  padding: 0,0,0,0;
+  color: #fff;
+  position: relative;
+  top: 5px;
+  left: 15px;
+}
+/*Cluster欄の設定*/
+.ClusterBox
+{
+  background: #fff;
+  width: 500px;
+  height: 300px;
+  border-radius: 45px;
+  position: absolute;
+  left:1000px
+}
+.ClusterBox h2
+{
+  text-align: center;
+  font-family: 'Kosugi', sans-serif;
+  font-size: 40px;
+  width: 400px;
+  height: 60px;
+  color: #303030;
+  border-bottom: 5px solid #097EBB;
+  position: absolute;
+  top:10px;
+  left:45px
+}
+.ClusterBox p
+{
+  font-family: 'Kosugi', sans-serif;
+  text-align: left;
+  width: 470px;
+  height: 50px;
+  font-size:20px;
+  padding-right: 5px;
+  padding-left: 5px;
+  color: #303030;
+  position: relative;
+  top:110px;
+  left: 50px;
+}
+.ClusterIcon
+{
+  background:#0F98DF ;
+  width: 200px;
+  height: 40px;
+  border-radius: 10px;
+  position: relative;
+  top:135px;
+  left: 150px;
+  transition:0.7s;
+}
+.ClusterIcon:hover
+{
+  background: #0b2b1c;
+}
+.ClusterIcon a
+{
+  font-family: 'Kosugi', sans-serif;
+  text-align: center;
+  text-decoration:none;
+  font-size: 30px;
+  padding: 0,0,0,0;
+  color: #fff;
+  position: relative;
+  top: 5px;
+  left: 50px;
+}
+
+/*アンケート欄の設定*/
+.AnkateBox
+{
+  background: #fff;
+  width: 1000px;
+  height: 300px;
+  border-radius: 45px;
+  position: absolute;
+  top: 1850px;
+  left: 450px;
+}
+
+.AnkateBox h2
+{
+  text-align: center;
+  font-family: 'Kosugi', sans-serif;
+  font-size: 40px;
+  width: 400px;
+  height: 60px;
+  color: #303030;
+  border-bottom: 5px solid #05468F;
+  position: absolute;
+  top:10px;
+  left:300px
+}
+.AnkateBox p
+{
+  font-family: 'Kosugi', sans-serif;
+  text-align: left;
+  width: 900px;
+  height: 50px;
+  font-size:20px;
+  padding-right: 5px;
+  padding-left: 5px;
+  color: #303030;
+  position: relative;
+  top:110px;
+  left: 45px;
+}
+.AnkateIcon
+{
+  background:#05468F ;
+  width: 300px;
+  height: 50px;
+  border-radius: 10px;
+  position: relative;
+  top: 135px;
+  left: 350px;
+  transition:0.7s;
+}
+.AnkateIcon:hover
+{
+  background: #3ca500;
+}
+.AnkateIcon a
+{
+  font-family: 'Kosugi', sans-serif;
+  text-align: center;
+  text-decoration:none;
+  font-size: 30px;
+  padding: 0,0,0,0;
+  color: #fff;
+  position: relative;
+  top: 10px;
+  left: 40px;
+}
+
+.TwitterBlock
+{
+  background: #303030;
+  width: 100%;
+  height: 800px;
+}
+.TwitterBox
+{
+  background: #fff;
+  width: 700px;
+  height: 600px;
+  border-radius: 45px;
+  position: absolute;
+  left:600px
+}
+.TwitterContents
+{
+  position: absolute;
+  top:40px;
+  left:100px;
+}
+
+/*フッター設定*/
+.footer
+{
+  background: #406abc;
+  width: 100%;
+  height: 120px;
+}
+.footer p
+{
+ text-align: center;
+ font-family: 'Kosugi Maru', sans-serif;
+ font-size: 30px;
+ color:#fff;
+ position: relative;
+ top: 40px;
+}
+
 
 div.slide-show {
   width: 1020px; /* スライドショーの幅 */
