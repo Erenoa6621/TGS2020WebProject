@@ -12,30 +12,200 @@ font-family: 選択フォント,sans-serif;
 html
 {
 font-family: Arial, Helvetica, sans-serif;
-width: 1920px;
-height: 100%;
+width: 100vmax;
+height: auto;
 }
 /*bodyタグ編集*/
 body{
   background-color: rgb(255, 255, 255);
+  width: 100%;
+  height: auto;
 }
 .header
 {
   background: #406abc;
   width: 100%;
   height: 120px;
+  position:static;
 }
+.header h1
+{ 
+  width: 100%;
+  height: auto;
+  font-size: auto;
+  text-align: center;
+  color: #fff;
+  position: relative;
+}
+
 /*logoタグ編集*/
-.logo
+/*.logo
 {
   font-family: 'Noto Sans', sans-serif;
   font-weight: 900;
   text-align: center;
   text-decoration:none;
   color:#fff;
+}*/
+.FirstArea
+{
+  position: relative;
 }
+.OCBox
+{
+  width: 30%;
+  height: auto;
+  background: #fff;
+  border-radius: 45px;
+  border: 5px solid #C13A48;
+  z-index: 2;
+  position: absolute;
+  left: 5%;
+  bottom: 10%;
+}
+
+.OCBox h2
+{
+  width: 20vw;
+  height: auto;
+  font-size: 2vw;
+  font-family: 'Kosugi', sans-serif;
+  text-align: center;
+  padding: 2% 2% 2% 2%;
+  margin: 0 4vw 0 4vw ;
+  border-bottom: 3px solid #FF1E1E;
+}
+.OCBox p
+{
+  font-family: 'Kosugi', sans-serif;
+  font-size: 1vw;
+  margin: 4vh 4vw 4vh 4vw;
+
+}
+.OCBox ul
+{
+  text-align: center;
+  padding-right: 3vw;
+  /*padding: 0vh 1vw 0vh auto;
+  margin: 2vh 0 2vh 0;*/
+}
+/*URLリスト設定*/
+.OCBox li
+{
+  text-align: center;
+  display: inline;
+  list-style-type: none;
+}
+/*アイコン設定*/
+li#AnkateIcon
+{
+  background:#05468F ;
+  padding: 5px 5px 5px 5px;
+  border-radius: 3px;
+  transition:0.7s;
+}
+li#AnkateIcon:hover
+{
+  background: #3ca500;
+}
+.Icon
+{
+  text-align: center;
+  font-family: 'Kosugi', sans-serif;
+  font-size: 1vw;
+  color: #fff;
+  text-decoration:none;
+
+}
+.OCBox a
+{
+  text-decoration:none ;
+}
+li#ClusterIcon
+{
+  background:#61C9FF ;
+  padding: 5px 5px 5px 5px;
+  border-radius: 3px;
+  transition:0.7s;
+}
+li#ClusterIcon:hover
+{
+  background:#0b2b1c;
+}
+li#YoutubeIcon
+{
+  background:#FF1E1E ;
+  padding: 5px 5px 5px 5px;
+  border-radius: 3px;
+  transition:0.7s;
+}
+li#YoutubeIcon:hover
+{
+  background: #05468F;
+}
+
+.NewsBox
+{
+  background: #fff;
+  width: 30%;
+  height: 20%;
+  border-radius: 45px;
+  border: 5px solid #006eff;
+  z-index: 3;
+  position: absolute;
+  top: 5%;
+  left:65%;
+}
+.NewsBox h2
+{
+  width: 20vw;
+  height: auto;
+  font-size: 2vw;
+  font-family: 'Kosugi', sans-serif;
+  text-align: center;
+  padding: 2% 2% 2% 2%;
+  margin: 0 4vw 0 4vw ;
+  border-bottom: 3px solid #1A8D1A;
+}
+
+.NewsBox iframe
+{
+  padding: 1vh 2vw 1vh 2vw;
+  font-size: 2vw;
+  width: 90%;
+  height: 50%;
+}
+
+.TwitterBox
+{
+  background: #fff;
+  width: 30%;
+  height: 50%;
+  border-radius: 45px;
+  border: 5px solid #006eff;
+  z-index: 3;
+  position: absolute;
+  left:65%;
+  bottom: 10%;
+}
+.TwitterBox h2
+{
+  width: 20vw;
+  height: auto;
+  font-size: 2vw;
+  font-family: 'Kosugi', sans-serif;
+  text-align: center;
+  padding: 2% 2% 2% 2%;
+  margin: 0 4vw 0 4vw ;
+  border-bottom: 3px solid #1A8D1A;
+}
+.twitter-timeline
+{
+  margin: 1vh 2vw 1vh 2vw;
+}
+
 /*ProjectNameタグ編集*/
-.ProjectName
+/*.ProjectName
 {
  background: #05468F 0% 0% no-repeat padding-box;
  border-radius: 51px;
@@ -59,12 +229,12 @@ body{
  top:20px;
  left:100px
  
-}
+}*/
 /*tab全体編集*/
 .tab-wrap {
   display: flex;
   flex-wrap: wrap;
-  margin:0px 300px;
+  top: auto;
 }
 .tab-wrap:after {
   content: '';
@@ -139,13 +309,13 @@ body{
 }
 
 /*IntroBlock　タグ編集*/
-.IntroBlock
+/*.IntroBlock
 {
   background: #303030;
   height: 500px;
-}
+}*/
 /*InfomationIntro　タグ編集*/
-.InformationIntro
+/*.InformationIntro
 {
   text-align: center;
   font-family: 'Kosugi', sans-serif;
@@ -157,9 +327,9 @@ body{
   position: relative;
   top: 20px;
   left:400px
-}
+}*/
 /*OCIntroタグ編集*/
-.OCIntro
+/*.OCIntro
 {
   text-align: center;
   font-family: 'Kosugi', sans-serif;
@@ -171,9 +341,9 @@ body{
   position: relative;
   top: 20px;
   left:400px
-}
+}*/
 /*TwitterIntroタグ編集*/
-.TwitterIntro
+/*.TwitterIntro
 {
   text-align: center;
   font-family: 'Kosugi', sans-serif;
@@ -185,7 +355,7 @@ body{
   position: relative;
   top: 20px;
   left:400px
-}
+}*/
 /*introタグ編集*/
 .intro
 {
@@ -237,7 +407,7 @@ list-style-type: none;
 padding-right: 20px;
 }
 /*twitterタブ編集*/
-.Twitter
+/*.Twitter
 {
  margin: 10px auto;
  position: relative;
@@ -246,17 +416,17 @@ padding-right: 20px;
  left:700px
  
  
-}
+}*/
 /*最新情報タブ編集*/
-.NewsTab
+/*.NewsTab
 {
  margin: auto 10px;
  position: relative;
  top: 100px;
  left: 50px;
-}
+}*/
 /*最新情報タブ編集*/
-.NewsBox
+/*.NewsBox
 {
   background: #fff;
   width: 1000px;
@@ -271,17 +441,17 @@ padding-right: 20px;
 {
   position: relative;
   top:10px;
-}
+}*/
 /*オープンキャンパスタブの設定*/
-.OCBlock
+/*.OCBlock
 {
   background: #406ABC;
   width: 100%;
   height: 800px;
 
-}
+}*/
 /*Youtube欄の設定*/
-.YoutubeBox{
+/*.YoutubeBox{
   background: #fff;
   width: 500px;
   height: 300px;
@@ -346,9 +516,9 @@ padding-right: 20px;
   position: relative;
   top: 5px;
   left: 15px;
-}
+}*/
 /*Cluster欄の設定*/
-.ClusterBox
+/*.ClusterBox
 {
   background: #fff;
   width: 500px;
@@ -410,10 +580,10 @@ padding-right: 20px;
   position: relative;
   top: 5px;
   left: 50px;
-}
+}*/
 
 /*アンケート欄の設定*/
-.AnkateBox
+/*.AnkateBox
 {
   background: #fff;
   width: 1000px;
@@ -499,7 +669,7 @@ padding-right: 20px;
   position: absolute;
   top:40px;
   left:100px;
-}
+}*/
 
 /*フッター設定*/
 .footer
@@ -520,7 +690,8 @@ padding-right: 20px;
 
 
 div.slide-show {
-  width: 1020px; /* スライドショーの幅 */
+  width:100%; /* スライドショーの幅 */
+  height: auto;
   max-width: 100%; /* スマホで表示が欠けないように */
   margin: 10px auto; /* 中央揃え */
   position: relative;
@@ -528,7 +699,7 @@ div.slide-show {
 
 .slide-show img { 
   animation: show 56s infinite; /* 56秒のスライドショーを繰り返し */
-  max-width: 100%;
+  width: 100%;
   height: auto;
   opacity: 0;
   position: absolute; /* 画像を重ねて表示 */
