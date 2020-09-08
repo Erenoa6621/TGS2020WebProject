@@ -23,26 +23,23 @@ header {
 	position: static;
 	margin: 0;
 	height: auto;
-	background: #99FF99;	/*背景色*/
-	padding: 5px 3%;	/*上下、左右への余白*/
+	background: #99FF99;	
+	padding: 5px 3%;	
 }
 
-/*ロゴ画像*/
+
 header #logo img {
 	position: static;
-	width: 100px;	/*画像の幅*/
-	margin-bottom: 10px;	/*下に空ける余白*/
+	width: 100px;	
+	margin-bottom: 10px;	
 }
 
-/*footer（copyrightなどが入った最下部ブロック）
----------------------------------------------------------------------------*/
+
 footer {clear: both;text-align: center;font-size: 13px;padding-bottom: 10px;background-color: #99FF99}
 footer a {text-decoration: none; color: #111111}
 footer .pr {display: block;}
 footer p {color: #1111;}
 
-/*footer内のulタグ（フッターメニュー）
----------------------------------------------------------------------------*/
 footer ul li {
 	display: inline;
 	padding: 10px;
@@ -51,57 +48,53 @@ footer ul a {
 	text-decoration: underline;
 }
 
-/*メニューブロック*/
+
 #menubar {
 	overflow: hidden;position: relative;z-index: 1;
-	background: #fff;	/*背景色（古いブラウザ用）*/
-	background: rgba(255,255,255,0.95);	/*背景色。255,255,255は白の事で、0.95は色が95%出た状態の事。*/
+	background: #fff;	
+	background: rgba(255,255,255,0.95);	
 }
-/*メニュー１個あたりの設定*/
+
 #menubar ul li {
-	float: left;		/*左に回り込み*/
-	width: 16.6%;			/*幅。今回は５個メニューがあるので100÷5=20*/
-	font-size: 20px;	/*文字サイズ*/
-	text-align: center;	/*文字をセンタリング*/
+	float: left;		
+	width: 16.6%;			
+	font-size: 20px;	
+	text-align: center;
 }
 #menubar ul li a {
 	text-decoration: none;display: block;
-	border-left: 1px solid #ccc;	/*左の線の幅、線種、色*/
-	height: 80px;		/*メニューの高さ。※ここを変更する場合は、上にあるfixmenu設定も変更が必要です。*/
-	padding-top: 5px;	/*上に空ける余白。メニューテキストの上下のバランスをとります。※ここを変更する場合は、上にあるfixmenu設定も変更が必要です。*/
-	color: #333;	/*文字色*/
+	border-left: 1px solid #ccc;
+	height: 80px;	
+	padding-top: 5px;	
+	color: #333;
 }
-/*１つ目のメニューへの追加指定*/
+
 #menubar li:first-child a {
-	border-left: none;	/*左の線を消す。*/
+	border-left: none;
 }
-/*飾り文字。小文字表記部分。*/
+
 #menubar li a span {
 	display: block;
-	font-size: 60%;	/*文字サイズ*/
-	color: #999;	/*文字色*/
+	font-size: 60%;	
+	color: #999;
 }
-/*マウスオン時*/
+
 #menubar li a:hover {
-	background: #330000;	/*背景色*/
-	color: #fff;		/*文字色*/
+	background: #330000;	
+	color: #fff;		
 }
-/*スマホ用メニューを表示させない*/
+
 #menubar-s {display: none;}
-/*３本バーアイコンを表示させない*/
 #menubar_hdr {display: none;}
 
-/*fixmenu設定（メニューが画面上部に到達した際のスタイル）
----------------------------------------------------------------------------*/
-/*上部固定メニュー用fixmenu設定*/
+
 body.is-fixed-menu #menubar.nav-fix-pos {
 	position: fixed;width: 100%;top: 0px;left: 0;
 }
 body.is-fixed-menu #contents {
-	margin-top: 85px;	/*「menubar li a」の「height」と「padding-top」を合計した数字にする。数行下の「body.is-fixed #menubar.nav-fix-pos」も同じサイズに。*/
+	margin-top: 85px;
 }
 
-/*上の設定の「is-fixed-menu」を「is-fixed」に変更したものをそのまま記入します。fixmenuスクリプトを２つ使う為に必要な設定になります。*/
 body.is-fixed #menubar.nav-fix-pos {
 	position: fixed;width: 100%;top: 0px;left: 0;
 }
@@ -120,31 +113,26 @@ body.is-fixed #contents {
   font-size: 3em;;
 }
 
-/*コンテンツ
----------------------------------------------------------------------------*/
 #contents {
 	overflow: hidden;margin: 0 auto;
-	max-width: 1400px;	/*最大幅。これ以上広がらない。*/
-  padding: 40px 3%;	/*上下、左右へのブロック内の余白*/
+	max-width: 1400px;
+  padding: 40px 3%;
 }
 
 
-
-
-/*h2タグ*/
 #contents h2 {
 	clear: both;
-	margin-bottom: 20px;	/*下に空けるスペース*/
-	text-align: center;		/*テキストのセンタリング*/
-	font-size: 48px;		/*文字サイズ*/
-	letter-spacing: 0.1em;	/*文字間隔を少し広くとる指定*/
-	line-height: 1.4;		/*行間を少し狭くする。デフォルトは冒頭のbody内にあります。*/
-	text-shadow: 2px 2px 0px rgba(0,0,0,0.3);	/*テキストの影。右へ、下へ、広げる幅、0,0,0は黒の事で0.3は色が30%出た状態。*/
+	margin-bottom: 20px;
+	text-align: center;		
+	font-size: 48px;	
+	letter-spacing: 0.1em;
+	line-height: 1.4;	
+	text-shadow: 2px 2px 0px rgba(0,0,0,0.3);
 }
-/*h2タグ内のspanタグ（飾り文字）*/
+
 #contents h2 span {
 	display: block;
-	font-size: 13px;	/*文字サイズ*/
+	font-size: 13px;	
 }
 
 
@@ -154,21 +142,20 @@ body.is-fixed #contents {
   margin: 10px;
 }
 
-/*h3タグ*/
 #contents h3 {
 	clear: both;
-	margin-bottom: 20px;	/*下に空けるスペース*/
-	text-align: center;		/*テキストのセンタリング*/
+	margin-bottom: 20px;
+	text-align: center;	
 	border-radius: 50px 25px 50px 25px / 50px 25px 50px 25px;
-	border: 1px solid #fff;	/*枠線の幅、線種、色*/
-  padding: 1px 1%;		/*上下、左右への余白*/
+	border: 1px solid #fff;
+  padding: 1px 1%;	
   font-size: 1.5em;
 }
-/*段落タグ*/
+
 #contents p {
 	padding: 0px 5% 20px;
 }
-/*他*/
+
 #contents h2 + p,
 #contents h3 + p,
 #contents h2 + ul.disc,
