@@ -1,7 +1,8 @@
 @charset "utf-8";
 
 
-@media (max-width:700px){
+@media (max-width:480px){
+	
 	/*============
 	nav
 	=============*/
@@ -135,13 +136,13 @@
 	  margin-left: 300px;
 	}
 	
+	
 	/*============
 	body
 	=============*/
 	body {
 		font-family: 'Kosugi Maru', sans-serif;
 		font-weight: 400;
-		overflow: hidden;
 		background: #141414;
 	}
 	
@@ -158,8 +159,8 @@
 	
 	header{
 		
-		
 	}
+	
 	h1{
 		position: fixed;
 		width: 100vw;
@@ -188,7 +189,7 @@
 		
 	}
 	.About{
-		background: #fff 0% 0% no-repeat padding-box;
+		background: #1E80DB 0% 0% no-repeat padding-box;
 		font: normal normal normal 0vw/5.2vw "Kosugi Maru";
 		font-size: 79%;
 		position: relative;
@@ -214,7 +215,7 @@
 	
 	}
 	.Character{
-		background: #fff 0% 0% no-repeat padding-box;
+		background: #1E80DB 0% 0% no-repeat padding-box;
 		font: normal normal normal 0vw/5.2vw "Kosugi Maru";
 		font-size: 79%;
 		position: relative;
@@ -229,7 +230,7 @@
 		left: -2vw;
 	}
 	.Operation{
-		background: #fff 0% 0% no-repeat padding-box;
+		background: #1E80DB 0% 0% no-repeat padding-box;
 		font: normal normal normal 0vw/5.2vw "Kosugi Maru";
 		font-size: 79%;
 		position: relative;
@@ -255,7 +256,7 @@
 	}
 	
 	.Staff{
-		background: #fff 0% 0% no-repeat padding-box;
+		background: #1E80DB 0% 0% no-repeat padding-box;
 		font: normal normal normal 0vw/5.2vw "Kosugi Maru";
 		font-size: 79%;
 		position: relative;
@@ -273,7 +274,7 @@
 		left: 8vw;
 	}
 	.Gallery{
-		background: #fff 0% 0% no-repeat padding-box;
+		background: #1E80DB 0% 0% no-repeat padding-box;
 		font: normal normal normal 0vw/5.2vw "Kosugi Maru";
 		font-size: 79%;
 		position: relative;
@@ -326,7 +327,7 @@
 */
 	
 }
-@media (min-width:701px){
+@media (min-width:481px){
 	::-webkit-scrollbar{
 	  width: 10px;
 	}

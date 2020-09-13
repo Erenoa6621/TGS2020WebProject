@@ -134,15 +134,19 @@
 	.open main {
 	  margin-left: 300px;
 	}
+	main section {
+		margin-left: 1rem;
+		overflow: scroll; /* ここのscrollが効かない */
+		height: 150vh; /* これを追加 */
+	}
 	
 	/*============
 	body
 	=============*/
 	body {
-		background-color: #FFFFFF;
+		background-color: #1E80DB;
 		font-family: 'Kosugi Maru', sans-serif;
 		font-weight: 400;
-		overflow: hidden;
 		margin: 0px;
 		padding: 0px;
 	}
