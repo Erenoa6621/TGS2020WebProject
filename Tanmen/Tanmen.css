@@ -114,7 +114,8 @@ body.is-fixed #contents {
 }
 
 #contents {
-	overflow: hidden;margin: 0 auto;
+	overflow: hidden;
+	margin: 0 auto;
 	max-width: 1400px;
   padding: 40px 3%;
 }
@@ -148,8 +149,9 @@ body.is-fixed #contents {
 	text-align: center;	
 	border-radius: 50px 25px 50px 25px / 50px 25px 50px 25px;
 	border: 1px solid #fff;
-  padding: 1px 1%;	
-  font-size: 1.5em;
+ 	padding: 1px 1%;	
+	font-size: 1.5em;
+	background: rgba(115, 66, 41, 0.8)
 }
 
 #contents p {
@@ -178,6 +180,12 @@ body.is-fixed #contents {
   text-align: center;
 }
 
+#Csection {
+	background:rgba(10,10,10,0.5);
+	width: 50%;
+	float: right;
+}
+
 /*
 #first  { 
   background: url(TanmenImage/TestRacer2.png) 50% 0 no-repeat fixed;   
@@ -192,3 +200,35 @@ body.is-fixed #contents {
   background: url(TanmenImage\utah-95032_1280.jpg) 50% 0 no-repeat fixed #FFF;
 }
 */
+
+#Ctitle {
+	/*background: url(TanmenImage/TestRacer.PNG);*/
+}
+#Cfirst  { 
+	background: url(TanmenImage/TestRacer2.png);
+	background-attachment: fixed;
+	background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+#Csecond { 
+	background: url(TanmenImage/TestRacer3.png);
+	background-attachment: fixed;
+	background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+#Cthird { 
+	background: url(TanmenImage/utah-95032_1280.jpg);
+	background-attachment: fixed;
+	background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+
+#Cmatter {
+	background-attachment: fixed;
+	background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat;
+}
