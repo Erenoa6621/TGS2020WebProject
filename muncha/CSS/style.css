@@ -1,0 +1,159 @@
+/*タイトル*/
+.title>img{    
+    margin: 0px 35%;
+}
+
+/*ヘッダーの設定*/
+#gnav li{
+    display: inline;
+}
+
+.gnav{
+    position: relative;
+}
+header{
+    position: fixed;
+    width: 101%;
+    top: 0%;
+    z-index: 10000;
+    margin: -1%;
+    background-color: #c0963c;
+}
+li#hedertitle{
+    width: 100%;
+    font-size: 150%;
+}
+.hederURL{
+    position: absolute;
+    top: 45%;
+    margin: 0px 5%;
+    right: 1%;
+}
+body{
+    padding-top: 7.5%;
+}
+
+/*トップ画像の設定*/
+.topimg{
+    margin: auto;
+}
+
+/*スライドショーの設定*/
+.topimg {
+    position   : relative;
+    overflow   : hidden;
+    width      : 769.5px;
+    height     : 430px;
+    margin     : auto;     
+    background : #ffffff;
+}
+   
+/*画像の設定*/
+.topimg img {
+    display    : block;
+    position   : absolute;
+    width      : inherit;
+    height     : inherit;
+    opacity    : 0;
+    animation  : slideAnime 20s ease infinite;
+}
+   
+/*スライドのアニメーションを段差で開始する*/
+.topimg img:nth-of-type(1) { animation-delay: 0s }
+.topimg img:nth-of-type(2) { animation-delay: 4s }
+.topimg img:nth-of-type(3) { animation-delay: 8s }
+.topimg img:nth-of-type(4) { animation-delay: 12s }
+.topimg img:nth-of-type(5) { animation-delay: 16s }
+   
+/*スライドのアニメーション*/
+@keyframes slideAnime{
+     0% { opacity: 0 }
+     3% { opacity: 1 }
+    17% { opacity: 1 }
+    20% { opacity: 0 }
+   100% { opacity: 0 }
+}
+
+/*ゲーム概要*/
+.SeisakuMenber>img{
+    margin: 0px 10%;
+}
+
+/*ギミック*/
+.gimikku>img{
+    margin: 1% 15%;
+}
+.gimikku>div{
+    margin: 0;
+    padding: 0;
+}
+.gimikku1{
+    margin: 0px 25%;
+    float: left;
+    width: 50%;
+}
+.gimikku2{
+    float: right;
+    width: 50%;
+}
+.gimikku1>img{
+    margin: 1% 15%;    
+}
+.gimikku2>img{
+    margin: 1% 15%;
+}
+.gimikku1>p{
+    width: 120%;
+}
+.gimikku2>p{
+    width: 120%;
+}
+
+/*チームメンバー*/
+.menber1{
+    margin: 0px 12.5%;
+    float: left;
+    width: 25%;
+}
+.menber2{
+    float: right;
+    width: 50%;
+}
+/*ダウンロードリンク*/
+.gameURL{
+    width: 100%;
+    margin: 0px 45%;
+    font-size: 1.5em;
+}
+
+/*Twitterの設定*/
+.twitter{
+    width: 30%;
+    height: 30%;
+    margin: 0px 10%;
+}
+
+/*ヘッダー2の設定*/
+h2{
+    margin: 30px 10%;
+}
+
+/*h3の設定*/
+h3{
+    margin: 25px 12.5%;
+}
+
+/*pの設定*/
+p{
+    margin: 20px 15%;
+}
+
+/*区切りの設定*/
+hr{
+    margin: 2% auto;
+    width: 85%;
+}
+
+@media screen and (max-width:480px){
+
+}
