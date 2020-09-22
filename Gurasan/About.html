@@ -4,16 +4,16 @@
 <meta charset="utf-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
 <meta name="viewport" content="width=device-width, initial-scale=0.5">
-<title>index</title>
+<title>About</title>
 <style id="applicationStylesheet" type="text/css">
 	.mediaViewInfo {
-		--web-view-name: index;
-		--web-view-id: index;
+		--web-view-name: About;
+		--web-view-id: About;
 		--web-scale-on-resize: true;
 		--web-enable-deep-linking: true;
 	}
 	:root {
-		--web-view-ids: index;
+		--web-view-ids: About;
 	}
 	* {
 		margin: 0;
@@ -21,14 +21,14 @@
 		box-sizing: border-box;
 		border: none;
 	}
-	#index {
+	#About {
 		position: absolute;
 		width: 1920px;
 		height: 1080px;
 		background-color: rgba(255,255,255,1);
 		overflow: hidden;
-		--web-view-name: index;
-		--web-view-id: index;
+		--web-view-name: About;
+		--web-view-id: About;
 		--web-scale-on-resize: true;
 		--web-enable-deep-linking: true;
 	}
@@ -57,23 +57,9 @@
 		overflow: visible;
 		width: 143px;
 		height: 136px;
-		text-align: left;
-		font-family: Meiryo;
-		font-style: normal;
-		font-weight: normal;
-		font-size: 60px;
-		color: rgba(255,255,255,1);
-	}
-	#About {
-		left: 314px;
-		top: 67px;
-		position: absolute;
-		overflow: visible;
-		width: 212px;
-		height: 136px;
 		--web-animation: fadein 0.3s ease-out;
 		--web-action-type: page;
-		--web-action-target: About.html;
+		--web-action-target: index.html;
 		cursor: pointer;
 		text-align: left;
 		font-family: Meiryo;
@@ -82,12 +68,26 @@
 		font-size: 60px;
 		color: rgba(255,255,255,1);
 	}
-	#Download {
-		left: 902px;
+	#About_l {
+		left: 314px;
 		top: 67px;
 		position: absolute;
 		overflow: visible;
-		width: 295px;
+		width: 212px;
+		height: 136px;
+		text-align: left;
+		font-family: Meiryo;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 60px;
+		color: rgba(255,255,255,1);
+	}
+	#Download {
+		left: 901px;
+		top: 67px;
+		position: absolute;
+		overflow: visible;
+		width: 297px;
 		height: 136px;
 		text-align: left;
 		font-family: Meiryo;
@@ -101,7 +101,7 @@
 		top: 67px;
 		position: absolute;
 		overflow: visible;
-		width: 220px;
+		width: 219px;
 		height: 136px;
 		--web-animation: fadein 0.3s ease-out;
 		--web-action-type: page;
@@ -115,7 +115,7 @@
 		color: rgba(255,255,255,1);
 	}
 	#Staff {
-		left: 1275px;
+		left: 1276px;
 		top: 67px;
 		position: absolute;
 		overflow: visible;
@@ -132,13 +132,19 @@
 		font-size: 60px;
 		color: rgba(255,255,255,1);
 	}
-	#rogo_mojiAndRogo5 {
+	#__________1_______PC____ {
+		left: 388px;
+		top: 328px;
 		position: absolute;
-		width: 914px;
-		height: 569px;
-		left: 503px;
-		top: 203px;
 		overflow: visible;
+		width: 1021px;
+		white-space: nowrap;
+		text-align: left;
+		font-family: Meiryo;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 60px;
+		color: rgba(255,255,255,1);
 	}
 </style>
 <script id="applicationScript">
@@ -2970,12 +2976,12 @@ window.application = new Application();
 </script>
 </head>
 <body>
-<div id="index">
+<div id="About">
 	<img id="BackGroundSky_02" src="BackGroundSky_02.png" srcset="BackGroundSky_02.png 1x, BackGroundSky_02@2x.png 2x">
-	<div id="TOP">
+	<div onclick="application.goToTargetView(event)" id="TOP">
 		<span>TOP</span>
 	</div>
-	<div onclick="application.goToTargetView(event)" id="About">
+	<div id="About_l">
 		<span>About</span>
 	</div>
 	<div id="Download">
@@ -2987,7 +2993,9 @@ window.application = new Application();
 	<div onclick="application.goToTargetView(event)" id="Staff">
 		<span>Staff</span>
 	</div>
-	<img id="rogo_mojiAndRogo5" src="rogo_mojiAndRogo5.png" srcset="rogo_mojiAndRogo5.png 1x, rogo_mojiAndRogo5@2x.png 2x">
+	<div id="__________1_______PC____">
+		<span>ジャンル　　　　：　ランアクション<br/>プレイ人数　　　：　1人<br/>ハード　　　　　：　PC<br/>コントローラー　：　キーボード</span><br>
+	</div>
 </div>
 </body>
 </html>
