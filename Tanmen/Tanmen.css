@@ -186,6 +186,18 @@ body.is-fixed #contents {
 	float: right;
 }
 
+#Isection {
+	background:rgba(10,10,10,0.5);
+	width: 50%;
+	float: right;
+	margin: 30px;
+}
+
+#IsectionCe {
+	background:rgba(10,10,10,0.7);
+	margin: 50px;
+	text-align: center;
+}
 /*
 #first  { 
   background: url(TanmenImage/TestRacer2.png) 50% 0 no-repeat fixed;   
@@ -205,14 +217,14 @@ body.is-fixed #contents {
 	/*background: url(TanmenImage/TestRacer.PNG);*/
 }
 #Cfirst  { 
-	background: url(TanmenImage/TestRacer2.png);
+	background: url(TanmenImage/AutumHill.png);
 	background-attachment: fixed;
 	background-position: center;
 	background-size: cover;
 	background-repeat: no-repeat;
 }
 #Csecond { 
-	background: url(TanmenImage/TestRacer3.png);
+	background: url(TanmenImage/SnowMountain.png);
 	background-attachment: fixed;
 	background-position: center;
 	background-size: cover;
@@ -226,9 +238,36 @@ body.is-fixed #contents {
 	background-repeat: no-repeat;
 }
 
+#Ifirst  { 
+	background: url(TanmenImage/TestRacer2.png);
+	background-attachment: fixed;
+	background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+#Isecond { 
+	background: url(TanmenImage/TestRacer3.png);
+	background-attachment: fixed;
+	background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+#Ithird { 
+	background: url(TanmenImage/BikeSide.png);
+	background-attachment: fixed;
+	background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+
+
 #Cmatter {
 	background-attachment: fixed;
 	background-position: center;
 	background-size: cover;
 	background-repeat: no-repeat;
+}
+
+#headline a{
+	text-align: right;
 }
