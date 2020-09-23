@@ -4,16 +4,16 @@
 <meta charset="utf-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
 <meta name="viewport" content="width=device-width, initial-scale=0.5">
-<title>index</title>
+<title>System</title>
 <style id="applicationStylesheet" type="text/css">
 	.mediaViewInfo {
-		--web-view-name: index;
-		--web-view-id: index;
+		--web-view-name: System;
+		--web-view-id: System;
 		--web-scale-on-resize: true;
 		--web-enable-deep-linking: true;
 	}
 	:root {
-		--web-view-ids: index;
+		--web-view-ids: System;
 	}
 	* {
 		margin: 0;
@@ -21,14 +21,14 @@
 		box-sizing: border-box;
 		border: none;
 	}
-	#index {
+	#System {
 		position: absolute;
 		width: 1920px;
 		height: 1080px;
 		background-color: rgba(255,255,255,1);
 		overflow: hidden;
-		--web-view-name: index;
-		--web-view-id: index;
+		--web-view-name: System;
+		--web-view-id: System;
 		--web-scale-on-resize: true;
 		--web-enable-deep-linking: true;
 	}
@@ -57,6 +57,10 @@
 		overflow: visible;
 		width: 143px;
 		height: 136px;
+		--web-animation: fadein 0.3s ease-out;
+		--web-action-type: page;
+		--web-action-target: index.html;
+		cursor: pointer;
 		text-align: left;
 		font-family: Meiryo;
 		font-style: normal;
@@ -83,11 +87,11 @@
 		color: rgba(255,255,255,1);
 	}
 	#Download {
-		left: 902px;
+		left: 901px;
 		top: 67px;
 		position: absolute;
 		overflow: visible;
-		width: 295px;
+		width: 300px;
 		height: 136px;
 		text-align: left;
 		font-family: Meiryo;
@@ -96,17 +100,13 @@
 		font-size: 60px;
 		color: rgba(255,255,255,1);
 	}
-	#System {
+	#System_n {
 		left: 604px;
 		top: 67px;
 		position: absolute;
 		overflow: visible;
-		width: 220px;
+		width: 219px;
 		height: 136px;
-		--web-animation: fadein 0.3s ease-out;
-		--web-action-type: page;
-		--web-action-target: System.html;
-		cursor: pointer;
 		text-align: left;
 		font-family: Meiryo;
 		font-style: normal;
@@ -115,7 +115,7 @@
 		color: rgba(255,255,255,1);
 	}
 	#Staff {
-		left: 1275px;
+		left: 1279px;
 		top: 67px;
 		position: absolute;
 		overflow: visible;
@@ -132,11 +132,11 @@
 		font-size: 60px;
 		color: rgba(255,255,255,1);
 	}
-	#rogo_mojiAndRogo5 {
+	#_1 {
 		position: absolute;
-		width: 914px;
-		height: 569px;
-		left: 503px;
+		width: 1564px;
+		height: 803px;
+		left: 147px;
 		top: 203px;
 		overflow: visible;
 	}
@@ -2970,9 +2970,9 @@ window.application = new Application();
 </script>
 </head>
 <body>
-<div id="index">
+<div id="System">
 	<img id="BackGroundSky_02" src="BackGroundSky_02.png" srcset="BackGroundSky_02.png 1x, BackGroundSky_02@2x.png 2x">
-	<div id="TOP">
+	<div onclick="application.goToTargetView(event)" id="TOP">
 		<span>TOP</span>
 	</div>
 	<div onclick="application.goToTargetView(event)" id="About">
@@ -2981,13 +2981,13 @@ window.application = new Application();
 	<div id="Download">
 		<a href="https://drive.google.com/drive/folders/1wRti6YOXN-ys6_B09zA91GIUXEVy7IU9"><span>Download</span></a>
 	</div>
-	<div onclick="application.goToTargetView(event)" id="System">
+	<div id="System_n">
 		<span>System</span>
 	</div>
 	<div onclick="application.goToTargetView(event)" id="Staff">
 		<span>Staff</span>
 	</div>
-	<img id="rogo_mojiAndRogo5" src="rogo_mojiAndRogo5.png" srcset="rogo_mojiAndRogo5.png 1x, rogo_mojiAndRogo5@2x.png 2x">
+	<img id="_1" src="_1.png" srcset="_1.png 1x, _1@2x.png 2x">
 </div>
 </body>
 </html>
