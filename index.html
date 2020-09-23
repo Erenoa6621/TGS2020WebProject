@@ -6,6 +6,7 @@
     <title>Tokyo University of Technology Interactive Game Producing</title>
     <link rel="stylesheet" href="CSS/TGS_Top.css">
     <link href="https://fonts.googleapis.com/css2?family=Kosugi&family=Kosugi+Maru&family=Noto+Sans&display=swap" rel="stylesheet">
+    <link href="https://use.fontawesome.com/releases/v5.0.8/css/all.css" rel="stylesheet">
 </head>
 <body>
     <div class = "wrapper">
@@ -26,11 +27,11 @@
          <img src="image/cluster5.png" /><!-- 7枚目の画像のURL -->
      </div>
      <div class="OCBox">
-        <h2>オープンキャンパス</h2>
-        <p>8月23日（日）オープンキャンパスに<br>お越しくださりありがとうございました！<br>見逃してしまった方はYoutubeアーカイブにて<br>ご覧いただけます。またClusterのワールドは<br>常に開放しております。<br>両方ともぜひご覧ください。</p>
+        <h2>TokyoGameShow</h2>
+        <p>9月24日(木)からTokyoGameShow2020Onlineに<br>出展します！期間中はCluster展示やYoutubeLiveなどを行う予定です。<br>下のアイコンからぜひご覧ください！<br> <br>9月25日（金）学生ゲーム実況企画Live<br>　会場：Youtube　時間：16：30～<br>9月26日（土）教員パネルディスカッション<br>　会場：Youtube　時間：16：00～<br>9月27日（日）TGS出展作品発表会<br>　会場：Cluster　Youtube　時間：15：00～ </p>
         <ul>
           <li id = "ClusterIcon"><a href="https://cluster.mu/w/11c78261-ec82-4312-a40a-9fd7514c65d7" target="blank"><span class = "Icon">Cluster</span></a></li>
-          <li id = "YoutubeIcon"><a href="https://youtu.be/z3hGvzF2FUY" target="blank"><span class = "Icon">YoutubeLive</span></a></li>
+          <li id = "YoutubeIcon"><a href="https://www.youtube.com/channel/UC7U-ruZ5oLTcbOLEdtmb_Hg" target="blank"><span class = "Icon">Youtube</span></a></li>
           <li id = "AnkateIcon"> <a href="https://docs.google.com/forms/d/e/1FAIpQLSfFUtct_L394AMYgvom9pgIZBJmrljCyEKc-78H90p71zB9dg/viewform" target="blank"><span class = "Icon">質問</span></a></li>
         </ul>                
       </div>
@@ -45,7 +46,19 @@
       </div>
     </div>  
 
-    
+    <div class="popup" id="js-popup">
+        <div class="popup-inner">
+          <div class="close-btn" id="js-close-btn"><i class="fas fa-times"></i></div>
+          <img src="image/全体ページ用.jpg" alt="ポップアップ画像"></a>
+          <div class="TGSPop">
+          <ul>
+              <li id="GameShowIcon"><a href="https://tgs-online.eventos.tokyo/web/portal/309/event/1214/module/booth/33324/19416"><span class = "Icon2">TokyoGameShow 出展ページ</span</a></li>
+              <li id ="TGSTUTIcon"><a href="https://www.teu.ac.jp/gameshow2020/index.html"><span class = "Icon2">TGS2020ONLINE 東京工科大学特設サイト</span></a></li>
+          </ul>
+        </div>
+        </div>
+        <div class="black-background" id="js-black-bg"></div>
+      </div>
     <div class="tab-wrap">
         <!--不必要部分一応残しておく-->
        <!--<input id="tab01" type="radio" name="tab" class="tab-switch" checked="checked"><label class="tab-label" for="tab01">全体</label>
@@ -283,6 +296,7 @@
     <footer class = "footer">
         <p>&copy;Tokyo University of Technology.</p>
     </footer>
+    <script src="CSS/JavaScript/WindowTest.js" defer></script>
     <!--<script type="text/javascript" src = "CSS/Javascript/TGS_Top.js"></script>-->
 </body>
 </html>

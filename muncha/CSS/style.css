@@ -1,6 +1,11 @@
+/*フォント*/
+html{
+    font-family: 'Kosugi',sans-serif;
+}
+
 /*タイトル*/
-.title>img{    
-    margin: 0px 35%;
+.title{  
+    text-align: center;
 }
 
 /*ヘッダーの設定*/
@@ -37,7 +42,10 @@ body{
 .topimg{
     margin: auto;
 }
-
+/*キャッチコピー*/
+.キャッチコピー>h3{
+    font-size: 200%;
+}
 /*スライドショーの設定*/
 .topimg {
     position   : relative;
@@ -74,23 +82,76 @@ body{
    100% { opacity: 0 }
 }
 
+/*遊び方*/
+*, *:before, *:after {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    }
+    .cp_cssslider {
+    width: 50%;
+    padding-top: 30%; /* 画像の高さ */
+    position: relative;
+    margin: 2em auto;
+    text-align: center;
+    }
+    .cp_cssslider > img {
+    position: absolute;
+    left: 0;
+    top: 0;
+    transition: all 0.5s;
+    border-radius: 3px;
+    box-shadow:0px 0px 5px 0px rgba(0,0,0,0.3);
+    }
+    .cp_cssslider input[name='cp_switch'] {
+    display: none;
+    }
+    /* サムネイル */
+    .cp_cssslider label {
+    margin: 15px 5px 0 5px;
+    border: 2px solid #ffffff;
+    display: inline-block;
+    cursor: pointer;
+    transition: all 0.5s ease;
+    opacity: 0.6;
+    border-radius: 3px;
+    }
+    .cp_cssslider label:hover {
+    opacity: 0.9;
+    }
+    .cp_cssslider label img {
+    display: block;
+    width: 120px;
+    border-radius: 2px;
+    }
+    .cp_cssslider input[name='cp_switch']:checked + label {
+    border: 2px solid #FF7043;
+    opacity: 1;
+    }
+    .cp_cssslider input[name='cp_switch'] ~ img {
+    opacity: 0;
+    }
+    .cp_cssslider input[name='cp_switch']:checked + label + img {
+    opacity: 1;
+    }
 /*ゲーム概要*/
-.SeisakuMenber>img{
-    margin: 0px 10%;
+.gaiyouleft{
+    margin: 0px 12.5%;
+    float: left;
+    width: 25%;
+}
+.geiyouright{
+    float: right;
+    width: 50%;
 }
 
 /*ギミック*/
 .gimikku>img{
     margin: 1% 15%;
 }
-.gimikku>div{
-    margin: 0;
-    padding: 0;
-}
 .gimikku1{
-    margin: 0px 25%;
+    margin: 0px 12.5%;
     float: left;
-    width: 50%;
+    width: 25%;
 }
 .gimikku2{
     float: right;
@@ -109,7 +170,36 @@ body{
     width: 120%;
 }
 
+.gimikku3{
+    margin: 0px 12.5%;
+    float: left;
+    width: 25%;
+}
+.gimikku4{
+    float: right;
+    width: 50%;
+}
+.gimikku3>img{
+    margin: 1% 15%;    
+}
+.gimikku4>img{
+    margin: 1% 15%;
+}
+.gimikku3>p{
+    width: 120%;
+}
+.gimikku4>p{
+    width: 120%;
+}
+/*movie*/
+.movie{
+    text-align: center;
+}
+
 /*チームメンバー*/
+.SeisakuMenber>img{
+    margin: 0px 10%;
+}
 .menber1{
     margin: 0px 12.5%;
     float: left;
@@ -121,9 +211,8 @@ body{
 }
 /*ダウンロードリンク*/
 .gameURL{
-    width: 100%;
-    margin: 0px 45%;
-    font-size: 1.5em;
+    text-align: center;
+    font-size: 200%;
 }
 
 /*Twitterの設定*/
@@ -135,16 +224,19 @@ body{
 
 /*ヘッダー2の設定*/
 h2{
+    font-size: 150%;
     margin: 30px 10%;
 }
 
 /*h3の設定*/
 h3{
+    font-size: 130%;
     margin: 25px 12.5%;
 }
 
 /*pの設定*/
 p{
+    font-size: 110%;
     margin: 20px 15%;
 }
 
@@ -155,5 +247,238 @@ hr{
 }
 
 @media screen and (max-width:480px){
+    .title>img{
+        width: 80%;
+        height: 80%;   
+        text-align: center;
+    }
+    #gnav li{
+        display: inline;
+    }
+    
+    .gnav{
+        position: relative;
+    }
+    header{
+        position: fixed;
+        width: 100%;
+        top: 0%;
+        z-index: 10000;
+        margin: -2%;
+        background-color: #c0963c;
+    }
+    .inner>img{
+        width: 40%;
+        margin: -2.5% -9%;
+        text-align: left;
+    }
+    .hederURL{
+        position: absolute;
+        margin: -2% 1%;
+        right: 2%;
+    }
+    body{
+        padding-top: 15%;
+    }
+    
+    /*トップ画像の設定*/
+    .topimg{
+        margin: auto;
+    }
+    .キャッチコピー>h3{
+        font-size: 100%;
+    }
+    /*スライドショーの設定*/
+    .topimg {
+        position   : relative;
+        overflow   : hidden;
+        width      : 346.275px;
+        height     : 193.5px;
+        margin     : auto;     
+        background : #ffffff;
+    }
+       
+    /*画像の設定*/
+    .topimg img {
+        display    : block;
+        position   : absolute;
+        width      : inherit;
+        height     : inherit;
+        opacity    : 0;
+        animation  : slideAnime 20s ease infinite;
+        text-align: center;
+    }
+       
+    /*スライドのアニメーションを段差で開始する*/
+    .topimg img:nth-of-type(1) { animation-delay: 0s }
+    .topimg img:nth-of-type(2) { animation-delay: 4s }
+    .topimg img:nth-of-type(3) { animation-delay: 8s }
+    .topimg img:nth-of-type(4) { animation-delay: 12s }
+    .topimg img:nth-of-type(5) { animation-delay: 16s }
+       
+    /*スライドのアニメーション*/
+    @keyframes slideAnime{
+         0% { opacity: 0 }
+         3% { opacity: 1 }
+        17% { opacity: 1 }
+        20% { opacity: 0 }
+       100% { opacity: 0 }
+    }
 
+    /*ゲーム概要*/
+    .gaiyouleft{
+        width: 80%;
+        margin: 0;
+        float: none;
+    }
+    .geiyouright{
+        width: 80%;
+        margin: 0 ;
+        float: none;
+    }
+    /*遊び方*/
+    *, *:before, *:after {
+        -webkit-box-sizing: border-box;
+        box-sizing: border-box;
+        }
+        .cp_cssslider {
+        width: 300px;
+        padding-top: 200px; /* 画像の高さ */
+        position: relative;
+        margin: 2em auto;
+        text-align: center;
+        }
+        .cp_cssslider > img {
+        position: absolute;
+        left: 0;
+        top: 0;
+        transition: all 0.5s;
+        border-radius: 3px;
+        box-shadow:0px 0px 5px 0px rgba(0,0,0,0.3);
+        }
+        .cp_cssslider input[name='cp_switch'] {
+        display: none;
+        }
+        /* サムネイル */
+        .cp_cssslider label {
+        margin: 15px 5px 0 5px;
+        border: 2px solid #ffffff;
+        display: inline-block;
+        cursor: pointer;
+        transition: all 0.5s ease;
+        opacity: 0.6;
+        border-radius: 3px;
+        }
+        .cp_cssslider label:hover {
+        opacity: 0.9;
+        }
+        .cp_cssslider label img {
+        display: block;
+        width: 30px;
+        border-radius: 2px;
+        }
+        .cp_cssslider input[name='cp_switch']:checked + label {
+        border: 2px solid #FF7043;
+        opacity: 1;
+        }
+        .cp_cssslider input[name='cp_switch'] ~ img {
+        opacity: 0;
+        }
+        .cp_cssslider input[name='cp_switch']:checked + label + img {
+        opacity: 1;
+        }
+    /*ギミック*/
+    .gimikku1{
+        width: 50%;
+        margin: 0;
+        float: none;        
+    } 
+    .gimikku1>p{
+        width: 150%;
+    }   
+    .gimikku2{
+        width: 50%;
+        margin: 0;
+        float: none;        
+    }
+    .gimikku2>p{
+        width: 150%;
+    }
+
+    .gimikku3{
+        width: 50%;
+        margin: 0;
+        float: none;
+        
+    } 
+    .gimikku3>p{
+        width: 150%;
+    }   
+    .gimikku4{
+        width: 50%;
+        margin: 0;
+        float: none;        
+    }
+    .gimikku4>p{
+        width: 150%;
+    }
+
+    /*movie*/
+    .movie{
+        text-align: center;
+    }
+    .movie>iframe{
+        width: 90%;
+    }
+    
+    /*チームメンバー*/
+    .SeisakuMenber>img{
+        margin: 0px 5%;
+    }
+    .menber1{
+        margin: 0px 7.5%;
+        float: left;
+        width: 40%;
+    }
+    .menber2{
+        float: right;
+        width: 40%;
+    }
+    /*ダウンロードリンク*/
+    .gameURL{
+        font-size: 100%;
+        text-align: center;
+        
+    }
+    
+    /*Twitterの設定*/
+    .twitter{
+        width: 40%;
+        height: 30%;
+        margin: 0px 5%;
+    }
+    
+    /*ヘッダー2の設定*/
+    h2{
+        font-size: 100%;
+        margin: 30px 5%;
+    }
+    
+    /*h3の設定*/
+    h3{
+        font-size: 90%;
+        margin: 25px 7.5%;
+    }
+    
+    /*pの設定*/
+    p{
+        font-size: 70%;
+        margin: 20px 10%;
+    }
+    
+    /*区切りの設定*/
+    hr{
+        margin: 3% auto;
+        width: 95%;
+    }
 }
