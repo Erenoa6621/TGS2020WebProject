@@ -741,3 +741,107 @@ div.slide-show {
 .slide-show img:nth-of-type(8) {
   animation-delay: 48s;
 }
+.popup {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 9999;
+  opacity: 0;
+  visibility: hidden;
+  transition: .6s;
+}
+.popup.is-show {
+  opacity: 1;
+  visibility: visible;
+}
+.popup-inner {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%,-50%);
+  width: 80%;
+  max-width: 800px;
+  padding: 100px;
+  background-color: #fff;
+  z-index: 2;
+}
+.popup-inner img 
+{
+  width: 100%;
+  height: auto;
+}
+.close-btn {
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 50px;
+  height: 50px;
+  line-height: 50px;
+  text-align: center;
+  cursor: pointer;
+}
+.close-btn i {
+  font-size: 20px;
+  color: #333;
+}
+.black-background {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0,0,0,.8);
+  z-index: 1;
+  cursor: pointer;
+}
+.TGSPop
+{
+  width:100%;
+  height: auto;
+  position: absolute;
+  top: 70%;
+  left: 7.5%;
+}
+.TGSPop li
+{
+  text-align: center;
+  display: inline;
+  list-style-type: none; 
+  border-right: 10%;
+} 
+.TGSPop a
+{
+  text-decoration:none;
+}
+
+li#GameShowIcon
+{
+  background: #FF1E1E;
+  padding: 3% 3% 3% 3%;
+  transition:0.7s;
+}
+li#TGSTUTIcon
+{
+  background: #FF1E1E;
+  padding: 3% 3% 3% 3%;
+  transition:0.7s;
+}
+li#GameShowIcon:hover
+{
+  background: #006eff;
+}
+li#TGSTUTIcon:hover
+{
+  background: #006eff;
+}
+.Icon2
+{
+  text-align: center;
+  font-family: 'Kosugi', sans-serif;
+  font-size: 2.25vh;
+  color: #fff;
+  text-decoration:none;
+  padding: 3% 0% 3% 0%;
+}
