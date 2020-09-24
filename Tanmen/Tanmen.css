@@ -271,3 +271,11 @@ body.is-fixed #contents {
 #headline a{
 	text-align: right;
 }
+
+#linkcolor a:hover{
+	color: white;
+}
+
+#linkcolor a:active{
+	color: white;
+}
