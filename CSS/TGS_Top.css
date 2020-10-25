@@ -820,7 +820,11 @@ li#GameShowIcon
 {
   background: #FF1E1E;
   padding: 3% 3% 3% 3%;
+  border-radius: 5px;
   transition:0.7s;
+  position: absolute;
+  top: 10%;
+  left: 33%;
 }
 li#TGSTUTIcon
 {
