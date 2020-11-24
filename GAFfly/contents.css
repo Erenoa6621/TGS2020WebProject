@@ -328,15 +328,14 @@
 	.svg-wrapper {
 		margin-top: 0;
 		position: relative;
-		width: 2vw;
+		width: 38vw;
 		/*make sure to use same height/width as in the html*/
 		height: 1vw;
 		top: 45vw;
-		left: 7vw;
+		left: 8vw;
 		display: inline-block;
 		border-radius: 3px;
 		margin-left: 5px;
-		margin-right: 5px;
 	}
 	.spot {
 		position: absolute;
@@ -346,18 +345,18 @@
 		left: 0;
 	}
 	#shape {
-		stroke-width: 12px;
-		width: 80vw;
-		height: 20vw;
+		stroke-width: 8px;
+		width: 35vw;
+		height: 15vw;
 		fill: transparent;
 		stroke: #ed1c24;
-		stroke-dasharray: 200 800;
-		stroke-dashoffset: -430;
+		stroke-dasharray: 100 400;
+		stroke-dashoffset: -215;
 		transition: 1s all ease;
 	}
 	#text {
 		margin-top: -34vw;
-		margin-left: 25vw;
+		margin-left: -2vw;
 		text-align: center;
 	}
 
@@ -599,7 +598,7 @@
 	.Staff{
 		position: relative;
 		font: normal normal normal 3vw/5vw Kosugi Maru;
-		top: 3vw;
+		top: 1vw;
 		left: 16vw;
 
 	}
@@ -653,7 +652,7 @@
 		/*make sure to use same height/width as in the html*/
 		height: 2vw;
 		top: 9vw;
-		left: 33vw;
+		left: 13vw;
 		display: inline-block;
 		border-radius: 3px;
 		margin-left: 5px;
