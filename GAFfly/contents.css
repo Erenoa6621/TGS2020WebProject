@@ -699,6 +699,21 @@
 		stroke-dashoffset: 0;
 		stroke: #b6195d;
 	}
+	.Contact{
+		position: relative;
+		font: normal normal normal 1.5vw/3vw Kosugi Maru;
+		top: 12vw;
+		left: 16vw;
+	
+	}
+	
+	.ContactTitle{
+		position: relative;
+		top: 14vw;
+		left: 18vw;
+		font: normal normal normal 3vw/2vw Kosugi Maru;
+		color: #030303;
+	}
 
 	footer {
 		position: relative;
