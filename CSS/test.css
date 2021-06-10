@@ -1,0 +1,324 @@
+@import url(https://fonts.googleapis.com/css?family=Bitter);
+body {
+  margin: 0;
+  font-family: 'Bitter', serif;
+  text-align: center;
+}
+
+/* Loading Block */
+/**#loading {
+    width: 100vw;
+    height: 100vh;
+    transition: all 1s;
+    background-color: #0bd;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 9999;
+  }
+  .spinner {
+    width: 100px;
+    height: 100px;
+    margin: 200px auto;
+    background-color: #fff;
+    border-radius: 100%;
+    animation: sk-scaleout 1.0s infinite ease-in-out;
+  }
+  /* Loading Animation 
+  @keyframes sk-scaleout {
+    0% {
+      transform: scale(0);
+    } 100% {
+      transform: scale(1.0);
+      opacity: 0;
+    }
+  }
+  
+  /* Hide Loading Block 
+  .loaded {
+    opacity: 0;
+    visibility: hidden;
+  }
+  
+  /* Contents Styling 
+  .gallery {
+    display: grid;
+    gap: .5rem;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  }
+  img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+  }*/
+
+.holder
+{
+  height: 100%;
+  width: 100%;
+}
+.holder {
+  height: 100vh;
+  position: relative;
+  z-index: 1;
+}
+h2
+{
+    text-align: center;
+    width: 25%;
+    height:40%;
+    position:relative;
+    left: 37%;
+
+
+}
+h2#a
+{
+    display: inline-block;
+}
+h2#OfficialIcon
+{
+    display: block;
+    background: rgb(250, 72, 140);
+    padding: 2% 1% 1% 1%;
+    border-radius: 10px;
+    transition:0.7s;
+}
+h2#OfficialIcon:hover
+{
+    background: springgreen;
+}
+.txt li
+{
+  text-align: center;
+  display: inline-block;
+  list-style-type: none;
+}
+.txt a
+{
+    text-decoration:none ;
+}
+.Icon
+{
+  text-align: center;
+  font-family: 'Kosugi', sans-serif;
+  font-size: 5vh;
+  color: #fff;
+  text-decoration:none;
+}
+li#ClusterIcon
+{
+  background:#61C9FF ;
+  padding: 1% 1% 1% 1%;
+  border-radius: 10px;
+  transition:0.7s;
+}
+li#ClusterIcon:hover
+{
+  background:#0b2b1c;
+}
+li#YoutubeIcon
+{
+  background:#FF1E1E ;
+  padding: 1% 1% 1% 1%;
+  border-radius: 10px;
+  transition:0.7s;
+}
+li#YoutubeIcon:hover
+{
+  background: #05468F;
+}
+
+/**.first {
+  animation: first 10s infinite;
+  background-image: url(../image/image2021_1.png) ;
+  background-repeat: no-repeat;
+  background-size: 100%;
+  
+}
+  @keyframes first {
+    0% {opacity: 1.0;}
+    10% {opacity: 0.8;}
+    20% {opacity: 0.6;}
+    30% {opacity: 0.4;}
+    40% {opacity: 0.2;}
+    50% {opacity: 0.1;}
+    60% {opacity: 0.2;}
+    70% {opacity: 0.4;}
+    80% {opacity: 0.6;}
+    90% {opacity: 0.8;}
+    100% {opacity: 1.0;}
+  }
+
+.second {
+  animation: second 10s infinite; animation-delay: 2s;
+  background-image: url(../image/image2021_2.png) ;
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
+  @keyframes second {
+    0% {opacity: 0;}
+    10% {opacity: 0.2;}
+    20% {opacity: 0.4;}
+    30% {opacity: 0.6;}
+    40% {opacity: 0.8;}
+    50% {opacity: 1.0;}
+    60% {opacity: 0.8;}
+    70% {opacity: 0.6;}
+    80% {opacity: 0.4;}
+    90% {opacity: 0.2;}
+    100% {opacity: 0;}
+  }
+
+.third {
+  animation: third 10s infinite;
+  animation-delay: 8s;
+  background-image: url(../image/image2021_3.png) ;
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
+  @keyframes third {
+    0% {opacity: 0;}
+    10% {opacity: 0.2;}
+    20% {opacity: 0.4;}
+    30% {opacity: 0.6;}
+    40% {opacity: 0.8;}
+    50% {opacity: 1.0;}
+    60% {opacity: 0.8;}
+    70% {opacity: 0.6;}
+    80% {opacity: 0.4;}
+    90% {opacity: 0.2;}
+    100% {opacity: 0;}
+  }
+
+  .fourth {
+    animation: fourth 10s infinite;
+    animation-delay: 14s;
+    background-image: url(../image/image2021_4.png) ;
+    background-repeat: no-repeat;
+    background-size: 100%;
+  }
+    @keyframes fourth {
+      0% {opacity: 0;}
+      10% {opacity: 0.2;}
+      20% {opacity: 0.4;}
+      30% {opacity: 0.6;}
+      40% {opacity: 0.8;}
+      50% {opacity: 1.0;}
+      60% {opacity: 0.8;}
+      70% {opacity: 0.6;}
+      80% {opacity: 0.4;}
+      90% {opacity: 0.2;}
+      100% {opacity: 0;}
+    }
+
+    .fifth {
+        animation: fifth 10s infinite;
+        animation-delay: 20s;
+        background-image: url(../image/image2021_5.png) ;
+        background-repeat: no-repeat;
+        background-size: 100%;
+        }
+        @keyframes fifth {
+          0% {opacity: 0;}
+          10% {opacity: 0.2;}
+          20% {opacity: 0.4;}
+          30% {opacity: 0.6;}
+          40% {opacity: 0.8;}
+          50% {opacity: 1.0;}
+          60% {opacity: 0.8;}
+          70% {opacity: 0.6;}
+          80% {opacity: 0.4;}
+          90% {opacity: 0.2;}
+          100% {opacity: 0;}
+        }
+    
+        .sixth {
+            animation: sixth 10s infinite;
+            animation-delay: 26s;
+            background: linear-gradient(#aab7f8, #ff75c6);
+            z-index: 30;
+          }
+            @keyframes sixth {
+              0% {opacity: 0;}
+              10% {opacity: 0.2;}
+              20% {opacity: 0.4;}
+              30% {opacity: 0.6;}
+              40% {opacity: 0.8;}
+              50% {opacity: 1.0;}
+              60% {opacity: 0.8;}
+              70% {opacity: 0.6;}
+              80% {opacity: 0.4;}
+              90% {opacity: 0.2;}
+              100% {opacity: 0;}
+            }**/
+
+            div.slide-show {
+                width: 100%; /* スライドショーの幅 */
+                height: auto;
+                max-width: 100%; /* スマホで表示が欠けないように */
+                margin: 10px auto; /* 中央揃え */
+                position: relative;
+                z-index: 1;
+              }
+              
+              .slide-show img { 
+                animation: show 20s infinite; /* 56秒のスライドショーを繰り返し */
+                width: 100%;
+                height: auto;
+                opacity: 0;
+                position: absolute; /* 画像を重ねて表示 */
+                left: 0;
+                top: 0;
+              }
+              
+              @keyframes show {
+                0% {opacity: 0}
+                5% {opacity: 0.5}
+                10% {opacity: 0.5}
+                32% {opacity: 0}
+              }
+              
+              .slide-show img:nth-of-type(1) {
+                position: relative;
+              }
+              
+              .slide-show img:nth-of-type(2) {
+                animation-delay: 0s;
+              }
+              
+              .slide-show img:nth-of-type(3) {
+                animation-delay: 4s;
+              }
+              
+              .slide-show img:nth-of-type(4) {
+                animation-delay: 8s;
+              }
+              .slide-show img:nth-of-type(5) {
+                animation-delay: 12s;
+              }
+              .slide-show img:nth-of-type(6) {
+                animation-delay: 16s;
+              }
+              /**.slide-show img:nth-of-type(7) {
+                animation-delay: 40s;
+              }
+              .slide-show img:nth-of-type(8) {
+                animation-delay: 48s;
+              }**/
+
+.txt {
+  margin-top: 25vh ;
+  position: absolute;
+  width: 100%;
+  z-index: 1000;
+}
+h1 {
+  font-size: 40px;
+  font-weight: 400;
+  margin: 0;
+}
+p {
+  font-size: 20px;
+  margin-top: 26px;
+}
